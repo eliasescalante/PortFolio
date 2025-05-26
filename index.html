@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elias Escalante | Full Stack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Elias Escalante</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Acerca de mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto / CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / PORTADA -->
+    <header class="vh-100 d-flex align-items-center justify-content-center bg-dark text-white">
+        <div class="text-center">
+            <h1 class="display-4">Elías | Full Stack Developer & Game Developer</h1>
+            <p class="lead">Soy un desarrollador Full Stack especializado en desarrollo backend & Game Developer</p>
+            <!-- Enlaces a redes -->
+            <div class="mt-4">
+                <a href="https://github.com/eliasescalante" target="_blank" class="btn btn-outline-light btn-lg me-2">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/elias-escalante/" target="_blank"
+                    class="btn btn-outline-primary btn-lg">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ACERCA DE MÍ -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center mb-4">Acerca de mí</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="src/img/me.jpg" class="img-fluid rounded shadow w-100" style="max-width: 450px;"
+                    alt="Mi foto" />
+            </div>
+            <div class="col-md-5">
+                <p>
+                    ¡Hola! Soy Elías, desarrollador Full Stack con una marcada orientación al Backend. Me apasiona
+                    construir soluciones robustas, escalables y bien estructuradas, cuidando cada parte del desarrollo:
+                    desde la lógica de negocio hasta el rendimiento del servidor y la calidad del código. Me especializo
+                    en crear aplicaciones web eficientes, mantenibles y alineadas con buenas prácticas de ingeniería de
+                    software.
+                </p>
+                <p>
+                    Mi stack principal es MERN (MongoDB, Express.js, React, Node.js), aunque también tengo experiencia
+                    con Django y NestJS, y manejo bases de datos relacionales como MySQL y NoSQL como MongoDB. Me siento
+                    cómodo diseñando APIs RESTful, estructurando arquitecturas limpias y optimizando procesos para
+                    lograr un backend fluido y confiable.
+                </p>
+                <p>
+                    Actualmente curso la Tecnicatura Universitaria en Programación, donde profundizo en algoritmos,
+                    estructuras de datos y diseño de software. Complemento esta formación académica participando en
+                    simulaciones laborales en No Country, trabajando bajo metodologías ágiles (SCRUM) en MVPs reales,
+                    colaborando con equipos de frontend, QA y UX/UI.
+                </p>
+                <p>
+                    Además, participo activamente en game jams donde desarrollo videojuegos en Godot Engine con
+                    GDScript. Este espacio me permite aplicar mis conocimientos técnicos en programación, lógica de
+                    gameplay y diseño de escenas, mientras entreno la creatividad y la resolución rápida de problemas en
+                    equipo y bajo presión.
+                </p>
+                <p>
+                    Creo en el aprendizaje constante y en combinar teoría con práctica real. Siempre estoy buscando
+                    nuevos desafíos donde seguir creciendo, explorando ideas y llevando mis habilidades un paso más
+                    allá.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Proyectos</h2>
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_dj_utn.png" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Cursos Marciales - Tien Long Hu</h5>
+                            <p class="card-text">
+                                Plataforma web desarrollada en Django para la gestión de cursos marciales de la escuela
+                                Tien Long Hu. Los usuarios pueden registrarse, gestionar su perfil, inscribirse a cursos
+                                y acceder a noticias. El sistema genera tickets de compra, actualiza automáticamente el
+                                cupo de los cursos y admite pagos con Mercado Pago. El administrador (cliente) puede
+                                gestionar cursos y noticias fácilmente desde el panel de administración de Django, sin
+                                necesidad de conocimientos técnicos. Utiliza Django REST Framework, Bootstrap, AJAX,
+                                animaciones con GSAP y autenticación JWT. Proyecto con aplicación real, solicitado por
+                                la escuela Tien Long Hu para promover y administrar sus cursos en línea.
+                            </p>
+
+
+                            <a href="https://github.com/eliasescalante/CursosMarciales_UTN"
+                                class="btn btn-outline-primary" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_react_ecommerce.png" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">🛒 E-commerce - AMA</h5>
+                            <p class="card-text">
+                                E-commerce AMA es una tienda online desarrollada con React.js y Vite que permite a los
+                                usuarios explorar productos, agregarlos al carrito y gestionar sus compras de forma
+                                dinámica. Utiliza Firebase como base de datos en tiempo real, React Router Dom para la
+                                navegación entre vistas y SweetAlert2 para mostrar notificaciones interactivas. El
+                                diseño es completamente responsive, adaptándose a distintos dispositivos, y cuenta con
+                                estilos personalizados para una mejor experiencia de usuario. Incluye lógica de control
+                                del carrito, validaciones y almacenamiento persistente. Proyecto ideal como ejemplo de
+                                SPA moderna con integración a servicios en la nube.
+                                <a href="https://pre-entrega1-escalante.vercel.app/" target="_blank">Probar demo</a>
+                            </p>
+
+
+                            <a href="https://github.com/eliasescalante/E-comerceReact_Elias_Escalante"
+                                class="btn btn-outline-primary" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_api_expressjs.png" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">API - COMMERCE - v.1.0</h5>
+                            <p class="card-text">
+                                API RESTful para e-commerce desarrollado con Express y MongoDB, que permite gestionar
+                                productos y carritos mediante operaciones CRUD completas. Incluye un sistema de login
+                                seguro con JWT, autenticación basada en bcrypt, Passport y manejo de cookies. La
+                                aplicación genera tickets de compra al finalizar una orden y actualiza automáticamente
+                                el stock de productos. Emplea patrones de diseño DAO y Repository para una estructura
+                                modular, además de DTOs y variables de entorno para mayor seguridad y escalabilidad.
+                                Para el frontend, utiliza plantillas Handlebars que facilitan la renderización dinámica
+                                de vistas, ofreciendo una interfaz básica para probar y consumir las funcionalidades de
+                                la API.
+                            </p>
+
+                            <a href="https://github.com/eliasescalante/preentrega_Backend_II"
+                                class="btn btn-outline-primary" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_chat_express.png" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Mi Chat v. 0.1</h5>
+                            <p class="card-text">
+                                Chat_v0.10 es un mini chat en tiempo real desarrollado con Express, Handlebars y
+                                Socket.io. Esta aplicación permite que múltiples usuarios conectados puedan enviar y
+                                recibir mensajes instantáneamente, logrando una comunicación fluida y sincronizada.
+                                Express se encarga del servidor y manejo de rutas, mientras que Handlebars facilita la
+                                generación dinámica de las vistas en el frontend. Socket.io gestiona la conexión
+                                WebSocket para la comunicación bidireccional en tiempo real entre el cliente y el
+                                servidor, garantizando que los mensajes se transmitan al instante a todos los usuarios
+                                conectados sin necesidad de recargar la página. Esta implementación es ideal para
+                                entender conceptos básicos de comunicación en tiempo real y desarrollo fullstack.
+                                <a href="https://thorn-tidy-apology.glitch.me/" target="_blank">Probar demo</a>
+                            </p>
+
+                            <a href="https://github.com/eliasescalante/Chat_v0.10" class="btn btn-outline-primary"
+                                target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_js_ecomerce.jpeg" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Ecomerce Tienda AMA </h5>
+                            <p class="card-text"> Es una simulación de tienda online de artículos para artes marciales,
+                                creada con HTML, CSS y JavaScript. Incluye validación de email con expresiones regulares
+                                y alertas personalizadas usando SweetAlert2 para mejorar la experiencia del usuario.
+                                El carrito es persistente, guardando los productos en LocalStorage para mantenerlos
+                                aunque se recargue la página. Los productos se cargan desde un archivo JSON que simula
+                                una base de datos.
+                                El diseño es responsive, adaptándose a distintos dispositivos, y el proceso de compra
+                                está validado y protegido con manejo de errores para evitar fallos durante la
+                                interacción.
+                                <a href="https://eliasescalante.github.io/e-comerce_web_con_js/" target="_blank">Probar
+                                    demo</a>
+                            </p>
+                            <a href="https://github.com/eliasescalante/e-comerce_web_con_js"
+                                class="btn btn-outline-primary" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_pos_python.png" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">POSMateriales - Aplicacion de escritorio</h5>
+                            <p class="card-text">Esta aplicación de escritorio está desarrollada en Python 3 siguiendo
+                                el patrón MVC y utilizando programación orientada a objetos. La interfaz gráfica se
+                                implementó con Tkinter, mientras que la gestión de la base de datos SQLite se realiza
+                                mediante la librería Peewee. La comunicación cliente-servidor se establece a través de
+                                sockets, utilizando localhost o una IP de red configurable en el puerto 9999. Se
+                                incorporaron decoradores para registrar detalladamente las llamadas a funciones en
+                                archivos de log, así como el patrón observador para monitorear altas en la base de
+                                datos, registrando esta información tanto en consola como en una tabla específica.
+                                Además, el proyecto cuenta con documentación generada con Sphinx para facilitar su
+                                mantenimiento y evolución.</p>
+                            <a href="https://github.com/eliasescalante/AppPossMateriales_v1"
+                                class="btn btn-outline-primary" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 7 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_cafe_barista_dj.jpeg" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Cursos Barista - aplicacion web de cursos</h5>
+                            <p class="card-text">BlogCafe es una aplicación web desarrollada con Django que simula un
+                                blog de cursos sobre la preparación de distintos estilos de café. Requiere autenticación
+                                para navegar y ofrece funcionalidades como registro de usuarios, edición de perfil
+                                (incluyendo cambio de avatar, datos personales y contraseña), deslogueo e inicio de
+                                sesión con diferentes cuentas. Los usuarios pueden visualizar el listado de cursos
+                                disponibles, dejar comentarios y enviar consultas de contacto desde cada curso. También
+                                pueden dejar mensajes en una sección dedicada. Los superusuarios tienen acceso ampliado
+                                para crear, editar y eliminar cursos directamente desde la interfaz, sin necesidad de
+                                ingresar al panel /admin. La app fue construida utilizando el patrón MVT de Django, con
+                                SQLite como base de datos, HTML y CSS nativo para la interfaz, y Bootstrap para el
+                                diseño responsivo..</p>
+                            <a href="https://github.com/eliasescalante/Cursos_de_Baristas_web"
+                                class="btn btn-outline-primary" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 8 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_demo_bomberman_gd.jpeg" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">BOMBERMAN - demo</h5>
+                            <p class="card-text">Bomberman Clone es una demo desarrollada en Godot 4, inspirada en el
+                                clásico juego retro Bomberman. El objetivo del jugador es explorar el nivel, destruir
+                                cajas, eliminar enemigos, encontrar la llave y alcanzar la puerta para avanzar, todo
+                                mientras gestiona cuidadosamente el uso limitado de bombas. El proyecto fue realizado
+                                como parte del curso de Godot 4 dictado por FerTer GameDev, utilizando assets de
+                                Kenney.nl y Tumas81 (minerman-adventure). Se implementaron sistemas de colisión, lógica
+                                de enemigos, detección de eventos y mecánicas clásicas de colocación y explosión de
+                                bombas, aprovechando las herramientas modernas del motor Godot 4.
+                                <a href="https://elias-escalante.itch.io/demo-version-free-bomberman"
+                                    target="_blank">Probar
+                                    demo</a>
+                            </p>
+                            <a href="https://github.com/eliasescalante/DemoBomberMan" class="btn btn-outline-primary"
+                                target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 9 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="src/img/cap_taller_artesano.png" class="card-img-top" alt="Proyecto 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Taller del Artesano</h5>
+                            <p class="card-text">Este repositorio contiene el servidor backend para la simulación de
+                                nuestro equipo, con una API RESTful enfocada en la gestión de usuarios y documentación
+                                automática.
+
+                                Tecnologías clave:
+                                Backend con Node.js, Express, MongoDB y Mongoose para modelar datos. Uso de Swagger para
+                                la documentación automática, Nodemon para desarrollo, CORS para la integración con
+                                frontend y Cloudinary para manejo de imágenes.
+
+                                El frontend se desarrolló con Angular, Angular Material y Bootstrap, asegurando una UI
+                                moderna, responsive y con buena navegación gracias a Angular Router y Flex Layout.
+
+                                Este proyecto forma parte de una simulación profesional donde trabajamos en un entorno
+                                colaborativo con roles definidos: Backend, Frontend y QA, siguiendo buenas prácticas de
+                                desarrollo y control de versiones.
+                            </p>
+                            <a href="https://github.com/eliasescalante/api_taller_del_artesano"
+                                class="btn btn-outline-primary" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO / CV -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Contacto & CV</h2>
+        <div class="text-center">
+            <p>Si te interesa colaborar, tenés una propuesta o simplemente querés ponerte en contacto, no dudes en
+                escribirme. Estoy abierto a oportunidades laborales, proyectos freelance y colaboraciones.</p>
+
+            <a href="src/CV_Elías.pdf" class="btn btn-primary mb-3" download>
+                <i class="bi bi-download me-1"></i> Descargar CV
+            </a>
+
+            <form id="contact-form" action="https://formspree.io/f/xnndkbqw" method="POST" class="mx-auto"
+                style="max-width: 500px;">
+                <div class="mb-3">
+                    <input type="text" name="name" placeholder="Tu nombre" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" placeholder="Tu correo" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" class="form-control" placeholder="Tu mensaje" rows="4" required></textarea>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+
+            <script>
+                const form = document.getElementById('contact-form');
+
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const data = new FormData(form);
+
+                    try {
+                        const response = await fetch(form.action, {
+                            method: form.method,
+                            body: data,
+                            headers: { 'Accept': 'application/json' }
+                        });
+
+                        if (response.ok) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: '¡Mensaje enviado!',
+                                text: 'Gracias por tu mensaje. Te responderé lo antes posible.',
+                                confirmButtonColor: '#28a745'
+                            });
+                            form.reset();
+                        } else {
+                            throw new Error('Error al enviar el formulario');
+                        }
+                    } catch (error) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Hubo un problema al enviar tu mensaje. Intenta de nuevo.',
+                            confirmButtonColor: '#dc3545'
+                        });
+                    }
+                });
+            </script>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        © 2025 Elías Escalante Full Stack Developer - Todos los derechos reservados
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/scripts/animations.js"></script>
+</body>
+
+</html>
