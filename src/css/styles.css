@@ -22,3 +22,22 @@ section.visible {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+/* Estilos para los logos tecnológicos */
+.tech-logos {
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.tech-logo {
+    width: 50px; /* Ajusta este valor para cambiar el tamaño */
+    height: 50px; /* Ajusta este valor para cambiar el tamaño */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%) brightness(1.5);
+}
+
+.tech-logo:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%) brightness(1);
+}
