@@ -14,3 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", onScroll);
     onScroll(); // trigger on load
 });
+
+window.addEventListener("scroll", () => {
+    const scrolled = window.pageYOffset;
+    const hero = document.getElementById("hero");
+    if (hero) {
+        hero.style.backgroundPositionY = -(scrolled * 0.3) + "px";
+    }
+});
