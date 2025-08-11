@@ -24,8 +24,9 @@ section.visible {
     transform: translateY(0);
 }
 
-#projects .row > [class*="col-"] {
-    margin-bottom: 30px; /* más espacio vertical entre filas */
+#projects .row>[class*="col-"] {
+    margin-bottom: 30px;
+    /* más espacio vertical entre filas */
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -37,8 +38,10 @@ section.visible {
 }
 
 .tech-logo {
-    width: 50px; /* Ajusta este valor para cambiar el tamaño */
-    height: 50px; /* Ajusta este valor para cambiar el tamaño */
+    width: 50px;
+    /* Ajusta este valor para cambiar el tamaño */
+    height: 50px;
+    /* Ajusta este valor para cambiar el tamaño */
     object-fit: contain;
     transition: transform 0.3s ease;
     filter: grayscale(100%) brightness(1.5);
@@ -68,4 +71,13 @@ section.visible {
     position: relative;
     z-index: 1;
     overflow: hidden;
+}
+
+.carousel-item img {
+    height: 350px;
+    object-fit: contain;
+    /* muestra la imagen completa, puede dejar espacio vacío */
+    width: 100%;
+    background-color: #000;
+    /* opcional: para que el fondo sea negro y no blanco en espacios vacíos */
 }
