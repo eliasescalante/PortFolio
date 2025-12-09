@@ -1,0 +1,132 @@
+body {
+    background: #0d0d0d;
+    color: #e6e6e6;
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.terminal {
+    width: 80%;
+    margin: 50px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+    overflow: hidden;
+}
+
+.header {
+    background: #2b2b2b;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.header p {
+    margin-left: 20px;
+    color: #bbb;
+}
+
+.output {
+    padding: 20px;
+    height: 60vh;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #0f0f0f;
+}
+
+.prompt {
+    margin-right: 10px;
+    color: #3af;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.command {
+    color: #3af;
+}
+
+.error {
+    color: #ff5f56;
+}
+
+.success {
+    color: #3cff78;
+}
+
+/* Colores en la terminal */
+.color-name {
+    color: #4af;
+    font-weight: bold;
+}
+
+.color-stack {
+    color: #6f6;
+}
+
+.color-link a {
+    color: #ffb86c;  /* naranja suave */
+    text-decoration: none;
+}
+
+.color-link a:hover {
+    color: #ffd9a3;  /* más claro al pasar */
+}
+
+
+.color-desc {
+    color: #ccc;
+}
+
+.color-about {
+    color: #ffb86c !important;  /* amarillo suave / naranja tenue */
+    font-weight: 400;
+}
+
+#about-photo {
+    position: fixed;
+    top: 50%;
+    right: 3%;             /* antes estaba right: 20px — muy al borde */
+    transform: translateY(-50%);
+    width: 260px;
+    height: 260px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+/* cuando aparece */
+#about-photo.show {
+    opacity: 1;
+    right: 15%;        /* ESTE ES EL CAMBIO QUE LA MUEVE MÁS AL CENTRO */
+}

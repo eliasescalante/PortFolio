@@ -1,0 +1,164 @@
+[
+    {
+        "id": "Full Stack",
+        "name": "ToDoList",
+        "stack": "Backend -> Django + Python3 + SQLite3 | FrontEnd -> React.js + Vite",
+        "tags": ["django", "api-rest", "react"],
+        "repo": "https://github.com/eliasescalante/ToDoList",
+        "demo": null,
+        "description": "Aplicación fullstack para gestionar tareas (CRUD completo). Incluye backend en Django REST Framework y un frontend en React + Vite."
+    },
+    {
+        "id": "php",
+        "name": "tiendaOnline_php",
+        "stack": "PHP + HTML + CSS + Bootstrap + MySQL",
+        "tags": ["php", "MySQL", "ecommerce"],
+        "repo": "https://github.com/eliasescalante/tiendaOnline_php",
+        "demo": null,
+        "description": "Plataforma funcional que permite mostrar un catálogo de productos con sus categorías, se utilizo el patron MVC."
+    },
+    {
+        "id": "web",
+        "name": "prototipo_alternativa_teclab",
+        "stack": "HTML · CSS · Bootstrap",
+        "tags": ["web", "frontend"],
+        "repo": "https://github.com/eliasescalante/prototipo_alternativa_teclab",
+        "demo": "https://eliasescalante.github.io/prototipo_alternativa_teclab/",
+        "description": "Prototipo Alta Fidelidad UX – Alternativa Teatral."
+    },
+    {
+        "id": "js",
+        "name": "e-comerce_web_con_js",
+        "stack": "JavaScript · HTML · Bootstrap",
+        "tags": ["js", "web", "json"],
+        "repo": "https://github.com/eliasescalante/e-comerce_web_con_js",
+        "demo": "https://eliasescalante.github.io/e-comerce_web_con_js/",
+        "description": "Simulación de un e-commerce de artículos para artes marciales, con carrito funcional, validación de datos, ventanas emergentes y persistencia mediante LocalStorage."
+    },
+    {
+        "id": "django-utn",
+        "name": "CursosMarciales_UTN",
+        "stack": "Django · Python | MariaDB | HTML · CSS · Bootstrap | JavaScript · AJAX | GSAP · Mercado Pago",
+        "tags": ["DJANGO", "python", "mercado pago"],
+        "repo": "https://github.com/eliasescalante/CursosMarciales_UTN",
+        "demo": null,
+        "description": "Plataforma web desarrollada con Django para que la escuela Tien Long Hu gestione sus cursos marciales, inscripciones, perfiles y noticias de forma centralizada. Incluye autenticación, administración completa de cursos, tickets de inscripción y un panel real utilizado por alumnos y administradores."
+    },
+    {
+        "id": "food",
+        "name": "no_country_foodDelivery",
+        "stack": "React + Vite · Express.JS · Node.js · MongoDB",
+        "tags": ["food", "web", "react"],
+        "repo": "https://github.com/eliasescalante/no_country_foodDelivery",
+        "demo": null,
+        "description": "Proyecto de pedidos de comida locales pensada como una aplicacion que facilite el uso de pedidos online para los restos de comida caseros con un costo muy bajo"
+    },
+    {
+        "id": "api-eco",
+        "name": "proyectoFinal_api_commerce",
+        "stack": "HTML · Handlebars · Node.js · Express.js · MongoDB",
+        "tags": ["api", "express", "ecommerce"],
+        "repo": "https://github.com/eliasescalante/proyectoFinal_api_commerce",
+        "demo": null,
+        "description": "API para manejar productos y carritos de compra. Los productos y carritos se almacenan en una base de datos y el servidor permite realizar operaciones CRUD. Se agrego Websockets al proyecto y vistas con plantillas"
+    },
+    {
+        "id": "app",
+        "name": "AppPossMateriales_v1",
+        "stack": "Python3 · SQLite3 · Tkinter",
+        "tags": ["app", "python"],
+        "repo": "https://github.com/eliasescalante/AppPossMateriales_v1",
+        "demo": null,
+        "description": "Aplicacion de escritorio desarrollada con Python 3 que permite realizar un CRUD a una base de datos. Controla stock de productos, permite agregarlos y modificarlos, ademas permite establecer precios de venta y costo."
+    },
+    {
+        "id": "django-cursos",
+        "name": "Cursos_de_Baristas_web",
+        "stack": "DJANGO · HTML · Bootstrap · CSS · SQLite3",
+        "tags": ["web", "cursos"],
+        "repo": "https://github.com/eliasescalante/Cursos_de_Baristas_web",
+        "demo": "http://web-production-86a0.up.railway.app",
+        "description": "blog de Cafe, orientado a cursos sobre la preparacion de los diferentes estilos de Cafe que existen"
+    },
+    {
+        "id": "game-1",
+        "name": "nubisTempesta",
+        "stack": "GODOT ENGINE · GDScript",
+        "tags": ["game", "godot"],
+        "repo": "https://github.com/eliasescalante/nubisTempesta",
+        "demo": "https://almendraco.itch.io/nubis-tempesta-y-los-perpetuos-deseantes",
+        "description": "Es un juego que es una precuela de la historieta, en donde encarnamos a Nubis en sus comienzos, desde su existencia como un ser más en el planeta X (poner nombre) mientras subsiste en el día a día, hasta su iniciación como Agente SubCaos a medida que descubre el trasfondo de la Omnired."
+    },
+    {
+        "id": "game-2",
+        "name": "the_seed",
+        "stack": "GODOT ENGINE · GDScript",
+        "tags": ["game", "godot"],
+        "repo": "https://github.com/eliasescalante/the_seed",
+        "demo": "https://ferchu-ayanami.itch.io/la-semilla",
+        "description": "Después de un largo viaje impulsado por el viento, transitás un suelo árido y resquebrajado, el último vestigio de un mundo que alguna vez fue verde. Sos una pequeña semilla, la última de tu especie, y tu única esperanza es llegar a un lugar donde la vida aún pueda renacer. Cada salto, cada movimiento, es un paso hacia la supervivencia en un entorno que parece estar en tu contra."
+    },
+    {
+        "id": "game-3",
+        "name": "game_diplo_unqui_froggy",
+        "stack": "GODOT ENGINE · GDScript",
+        "tags": ["game", "godot"],
+        "repo": "https://github.com/eliasescalante/game_diplo_unqui_froggy",
+        "demo": "https://elias-escalante.itch.io/frogy-version-alternativa-de-frogger",
+        "description": "Juego desarrollado para la diplomatura de desarrollo en videojuegos de la UNQUI. Es una versión alternativa de FROGGER. hay que llegar a la casita pero que no te maten los fantasmitas!!"
+    },
+    {
+        "id": "game-4",
+        "name": "-am_-am",
+        "stack": "GODOT ENGINE · GDScript",
+        "tags": ["game", "godot"],
+        "repo": "https://github.com/eliasescalante/-am_-am",
+        "demo": "https://ferchu-ayanami.itch.io/am-am",
+        "description": "Combine the different pieces and feed Mochi, the cutest hamster in the world. Each combination will go to its cute little tummy."
+    },
+    {
+        "id": "game-5",
+        "name": "atEase",
+        "stack": "GODOT ENGINE · GDScript",
+        "tags": ["game", "godot"],
+        "repo": "https://github.com/eliasescalante/atEase",
+        "demo": "https://ferchu-ayanami.itch.io/at-ease",
+        "description": "The mind is spiraling, a wave of fear begins to rise, sudden and overwhelming — but small acts of care can light the way. You’ll help someone navigate a panic attack, guide their breath, ground their thoughts, and help them remember: this will pass."
+    },
+    {
+        "id": "game-5",
+        "name": "game_jam_toastaggedon",
+        "stack": "GODOT ENGINE · GDScript",
+        "tags": ["game", "godot"],
+        "repo": "https://github.com/eliasescalante/game_jam_toastaggedon",
+        "demo": "https://ferchu-ayanami.itch.io/toastageddon",
+        "description": "Un juego frenético donde controlás una tostada y enfrentás el caos de las tostadoras en un mundo pixel art futurista."
+    },
+    {
+        "id": "game-6",
+        "name": "snake_game_pygame",
+        "stack": "Pygame",
+        "tags": ["game", "python", "aplicacion escritorio"],
+        "repo": "https://github.com/eliasescalante/snake_game_pygame",
+        "demo": null,
+        "description": "Este es un juego básico inspirado en el clasico juego de Snake desarrollado en Python utilizando la biblioteca Pygame."
+    },
+    {
+        "id": "game-7",
+        "name": "DemoBomberMan",
+        "stack": "GODOT ENGINE · GDScript",
+        "tags": ["game", "godot"],
+        "repo": "https://github.com/eliasescalante/DemoBomberMan",
+        "demo": "https://elias-escalante.itch.io/demo-version-free-bomberman",
+        "description": "Encuentra la llave y busca la puerta mientras eliminas enemigos y rompes las cajas, pero ten cuidado porque se te acaban las bombas. "
+    },
+    {
+        "id": "game-8",
+        "name": "mini_juego_ping_pong",
+        "stack": "Python3 · Kivy",
+        "tags": ["game", "python", "aplicacion escritorio"],
+        "repo": "https://github.com/eliasescalante/mini_juego_ping_pong",
+        "demo": null,
+        "description": "Aplicando algunos conceptos basicos de la libreria Kivy"
+    }
+]
