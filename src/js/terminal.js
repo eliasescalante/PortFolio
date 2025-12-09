@@ -57,6 +57,7 @@ Comandos disponibles:
 
   - HTML · CSS · JavaScript · Bootstrap
   - React.js + Vite
+  - Wordpress
 
 > Skills GameDeveloper: 
 

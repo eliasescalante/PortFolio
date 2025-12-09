@@ -130,3 +130,40 @@ input {
     opacity: 1;
     right: 15%;        /* ESTE ES EL CAMBIO QUE LA MUEVE MÁS AL CENTRO */
 }
+
+
+#footer-tech {
+    margin-top: 25px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    text-align: center;
+    opacity: 0.85;
+}
+
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 12px;
+}
+
+/* Ajuste ideal para PNG */
+.footer-icons img {
+    width: 38px;
+    height: auto;
+    opacity: 0.75;
+    transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+    filter: drop-shadow(0 0 3px rgba(0,255,0,0.15));
+}
+
+.footer-icons img:hover {
+    transform: scale(1.18);
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(0,255,0,0.6));
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
