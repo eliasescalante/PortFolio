@@ -160,5 +160,14 @@
         "repo": "https://github.com/eliasescalante/mini_juego_ping_pong",
         "demo": null,
         "description": "Aplicando algunos conceptos basicos de la libreria Kivy"
+    },
+    {
+        "id": "flask",
+        "name": "TurnitosApp - API-REST",
+        "stack": "Python3 · flask · MySQL",
+        "tags": ["flask", "python", "api-rest"],
+        "repo": "https://github.com/eliasescalante/TurnitosApp",
+        "demo": null,
+        "description": "Backend desarrollado con Python + Flask para gestionar turnos de una clínica médica. Permite listar médicos, consultar la agenda de cada profesional y reservar turnos con validación de disponibilidad."
     }
 ]
