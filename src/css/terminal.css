@@ -167,3 +167,102 @@ input {
     font-size: 0.8rem;
     opacity: 0.6;
 }
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .terminal {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .terminal {
+        width: 95%;
+        margin: 15px auto;
+        border-radius: 6px;
+    }
+
+    .output {
+        height: 55vh;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .input-line {
+        padding: 12px;
+    }
+
+    .prompt {
+        font-size: 0.85rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ocultar foto en mobile */
+@media (max-width: 768px) {
+    #about-photo {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 6px;
+    }
+
+    .header p {
+        font-size: 0.75rem;
+        margin-left: 10px;
+    }
+
+    .header span {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #footer-tech {
+        padding: 15px 10px;
+    }
+
+    .footer-icons {
+        gap: 12px;
+    }
+
+    .footer-icons img {
+        width: 30px;
+    }
+
+    .footer-text {
+        font-size: 0.7rem;
+    }
+}
+
+/* Mobile chico */
+@media (max-width: 480px) {
+    .footer-icons img {
+        width: 26px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding-bottom: 80px;
+    }
+
+    .output {
+        height: 50vh;
+    }
+}

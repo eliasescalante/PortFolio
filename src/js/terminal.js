@@ -1,6 +1,9 @@
 const output = document.getElementById("output");
 const input = document.getElementById("input");
 const aboutPhoto = document.getElementById("about-photo");
+const terminal = document.querySelector(".terminal");
+const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
 
 // --- PLACEHOLDERS ROTATIVOS ---
 const placeholders = [
@@ -48,7 +51,7 @@ Comandos disponibles:
 > Skills Backend:
 
   - Node.js · Express · NestJS · TypeScript 
-  - Django · Python
+  - Django · Flask · Python
   - PostgreSQL · MySQL · MariaDB · MongoDB
   - Docker · JWT · WebSockets
   - Git · Arquitectura MVC/Servicios
@@ -394,8 +397,7 @@ input.addEventListener("keydown", async (e) => {
     // =========================================================
     if (commands[cmd]) {
         if (cmd === "clear") {
-            output.innerHTML = "";
-            hideAboutPhoto();
+            await resetTerminal();
         } else {
             await typeWriter(commands[cmd]);
             appendOutput("");
@@ -408,3 +410,14 @@ input.addEventListener("keydown", async (e) => {
 
     input.value = "";
 });
+
+/* Mobile: el teclado aparece SOLO tras interacción */
+if (!isMobile) {
+    input.focus();
+}
+
+async function resetTerminal() {
+    output.innerHTML = "";
+    hideAboutPhoto();
+    await welcomeMessage();
+}
