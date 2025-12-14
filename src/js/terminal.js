@@ -109,9 +109,8 @@ function typeWriter(text, speed = 20) {
 // --- MENSAJE DE BIENVENIDA ---
 async function welcomeMessage() {
     await typeWriter("Bienvenido a mi portfolio ...", 25);
-    await typeWriter("\nCargando comandos...", 25);
     await new Promise((r) => setTimeout(r, 400));
-    await typeWriter("\nListo! Escribí ", 25);
+    await typeWriter("\nEscribi ", 25);
     await typeWriter("'help'", 25);
     await typeWriter(" para comenzar.\n\n", 25);
 }

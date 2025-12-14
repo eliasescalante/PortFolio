@@ -150,18 +150,19 @@ input {
 
 /* Ajuste ideal para PNG */
 .footer-icons img {
-    width: 38px;
+    width: 20px;          /* antes 38px */
     height: auto;
-    opacity: 0.75;
+    opacity: 0.7;
     transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
-    filter: drop-shadow(0 0 3px rgba(0,255,0,0.15));
+    filter: drop-shadow(0 0 2px rgba(0,255,0,0.12));
 }
 
 .footer-icons img:hover {
-    transform: scale(1.18);
+    transform: scale(1.12);   /* antes 1.18 */
     opacity: 1;
-    filter: drop-shadow(0 0 6px rgba(0,255,0,0.6));
+    filter: drop-shadow(0 0 20px rgba(114, 241, 114, 0.4));
 }
+
 
 .footer-text {
     font-size: 0.8rem;
