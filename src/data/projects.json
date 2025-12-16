@@ -167,7 +167,7 @@
         "stack": "Python3 · flask · MySQL",
         "tags": ["flask", "python", "api-rest"],
         "repo": "https://github.com/eliasescalante/TurnitosApp",
-        "demo": null,
+        "demo": "https://turnitos-api-deploy-test.onrender.com/",
         "description": "Backend desarrollado con Python + Flask para gestionar turnos de una clínica médica. Permite listar médicos, consultar la agenda de cada profesional y reservar turnos con validación de disponibilidad."
     }
 ]

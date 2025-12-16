@@ -74,9 +74,10 @@ Comandos disponibles:
     contact: `
 > Contacto:
 
-  Email: elias.escalante.dev@gmail.com
-  LinkedIn: /elias-escalante/
-  GitHub: /eliasescalante/
+  Email:    eliasw.escalante@gmail.com
+  LinkedIn: https://www.linkedin.com/in/elias-escalante/
+  GitHub:   https://github.com/eliasescalante
+  Itch.io:  https://elias-escalante.itch.io/
 `,
     clear: "clear",
 };
