@@ -213,8 +213,8 @@ input.addEventListener("keydown", async (e) => {
         await typeWriter("> Generando descarga del CV...\n", 20);
 
         const link = document.createElement("a");
-        link.href = "src/assets/CV_Elias_Escalante_ATS_1.pdf";
-        link.download = "CV_Elias_Escalante_ATS_1.pdf";
+        link.href = "src/assets/CV_Elias_BACKEND.pdf";
+        link.download = "CV_ELIAS_BACKEND.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -222,7 +222,7 @@ input.addEventListener("keydown", async (e) => {
         await typeWriter("> Descarga iniciada ✔\n");
         await typeWriter("Si no se descargó automáticamente, podés abrir:\n", 15);
 
-        output.innerHTML += `<a href="src/assets/CV_Elias_Escalante_ATS_1.pdf" target="_blank" class="color-link">Ver CV aquí</a><br>`;
+        output.innerHTML += `<a href="src/assets/CV_ELIAS_BACKEND.pdf" target="_blank" class="color-link">Ver CV aquí</a><br>`;
         input.value = "";
         return;
     }
