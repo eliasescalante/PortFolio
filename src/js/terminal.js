@@ -39,35 +39,40 @@ Comandos disponibles:
     about: `
 > Hola, soy Elías Escalante.
 
-> Soy desarrollador Full Stack con especializacion en desarrollo Backend
-> Soy estudiante avanzado de la Tecnicatura Superior en Programación.
-> Profesor particular de Logica de programación y desarrollo de sofware.
-> Experiencia en MERN, Django y NestJS. Para el desarrollo Backend
-> APIs RESTful, SQL/NoSQL, Docker.
+> Desarrollador Full Stack con especialización en desarrollo Backend.
+> Estudiante avanzado de la Tecnicatura Superior en Programación (TECLAB).
+> Estudiante de la Tecnicatura en Programación Universitaria (UNQUI).
+> Profesor particular de lógica de programación y desarrollo de software.
+> Experiencia en desarrollo Backend con MERN, Django, Flask y NestJS.
+> Diseño e implementación de APIs RESTful.
+> Manejo de bases de datos SQL y NoSQL.
+> Contenerización con Docker y kubernetes. 
 > Desarrollo de videojuegos con Godot y GDScript.
-> Git/GitHub, metodologías ágiles.
+> Control de versiones con Git/GitHub y trabajo con metodologías ágiles.
 `,
     skills: `
-> Skills Backend:
+> Skills :: Backend (Primary)
 
   - Node.js · Express · NestJS · TypeScript 
-  - Django · Flask · Python
+  - Python · Django · Flask
   - PostgreSQL · MySQL · MariaDB · MongoDB
-  - Docker · JWT · WebSockets
-  - Git · Arquitectura MVC/Servicios
+  - APIs RESTful · JWT · WebSockets
+  - Docker · Arquitectura MVC / Services
+  - Git · Control de versiones
 
-> Skills FrontEnd:
+> Skills :: FrontEnd (Secondary)
 
-  - HTML · CSS · JavaScript · Bootstrap
+  - HTML · CSS · JavaScript
   - React.js + Vite
   - Wordpress
+  - Bootstrap
 
 > Skills GameDeveloper: 
 
   - GODOT ENGINE · GDScript
-  - Diseño de mecánicas
+  - Diseño de mecánicas de juego
   - Sistemas de inventario
-  - IA básica y pathfinding
+  - IA básica y Pathfinding
   - Señales, animaciones y escenas
   - Prototipado rápido
 `,
