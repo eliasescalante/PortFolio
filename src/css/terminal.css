@@ -267,3 +267,22 @@ input {
         height: 50vh;
     }
 }
+
+.color-edu-title {
+    color: #ffb86c;
+    font-weight: 500;
+}
+
+.color-edu-item {
+    color: #cfcfcf;
+}
+
+.color-edu-inst {
+    color: #6f6;
+    font-weight: 500;
+}
+
+.color-prompt {
+    color: #4885f5; /* amarillo suave */
+    font-weight: 600;
+}

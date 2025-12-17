@@ -28,6 +28,7 @@ Comandos disponibles:
   help             - mostrar comandos
   about            - sobre mí
   skills           - stack técnico
+  education        - formación y certificaciones
   projects         - proyectos dinámicos
   project <id>     - mostrar datos de un proyecto
   projects <tag>   - filtrar proyectos
@@ -85,6 +86,42 @@ Comandos disponibles:
   Itch.io:  https://elias-escalante.itch.io/
 `,
     clear: "clear",
+    education: `
+> Formación & Certificaciones:
+
+> Educación formal:
+
+  - Tecnicatura Superior en Programación — TECLAB (en curso)
+  - Tecnicatura Universitaria en Programación — UNQUI (en curso)
+
+> Diplomaturas & Carreras:
+
+  - Diplomatura en Desarrollo Backend con Django & Python — UTN
+  - Diplomatura en Python — UTN
+  - Diplomatura en Desarrollo y Programación de Videojuegos — UNQUI
+  - Carrera de Desarrollo Full Stack (Node.js · Express · MongoDB · REACT) — Coderhouse
+  - Carrera de Desarrollo Backend (Node.js · Express · MongoDB) — Coderhouse
+
+> Cursos complementarios:
+
+  - Bases de Datos SQL — Coderhouse
+  - JavaScript — Coderhouse
+  - Desarrollo Web — Coderhouse
+  - WordPress — Coderhouse
+  - Testing QA Manual — Coderhouse
+  - Java (Nivel Inicial e Intermedio) — UTN
+  - Python & Django — Coderhouse
+  - Introducción a Inteligencia Artificial — TECLAB
+
+> Otros:
+
+  — Actualización Profesional en Inteligencia Artificial — TECLAB
+  — Inglés A1 — CUI
+
+> Formación continua y aprendizaje autodidacta.
+`,
+
+
 };
 
 
@@ -95,7 +132,7 @@ function hideAboutPhoto() {
 
 
 // --- TYPING ANIMATION ---
-function typeWriter(text, speed = 20) {
+function typeWriter(text, speed = 5) {
     return new Promise((resolve) => {
         let i = 0;
         let interval = setInterval(() => {
@@ -110,6 +147,15 @@ function typeWriter(text, speed = 20) {
         }, speed);
     });
 }
+
+async function typeWriterLines(lines, speed = 80) {
+    for (let line of lines) {
+        output.innerHTML += line + "\n";
+        output.scrollTop = output.scrollHeight;
+        await new Promise(r => setTimeout(r, speed));
+    }
+}
+
 
 
 // --- MENSAJE DE BIENVENIDA ---
@@ -169,7 +215,9 @@ input.addEventListener("keydown", async (e) => {
     if (e.key !== "Enter") return;
 
     const cmd = input.value.trim();
-    appendOutput("\nelias@portfolio:~$ " + cmd);
+    output.innerHTML +=
+        `\n<span class="color-prompt">elias@portfolio:~$</span> ${cmd}\n`;
+    output.scrollTop = output.scrollHeight;
 
     history.push(cmd);
     hIndex = history.length;
@@ -392,6 +440,31 @@ input.addEventListener("keydown", async (e) => {
             await typeWriter("> Error al cargar proyectos 😢\n");
         }
 
+        input.value = "";
+        return;
+    }
+
+    // =========================================================
+    // --- COMANDOS EDUCATION
+    // =========================================================
+
+    if (cmd === "education") {
+
+        let coloredEducation = commands.education
+            // Títulos en amarillo
+            .replace(/^> ([^:\n]+):/gm,
+                `<span class="color-edu-title">> $1:</span>`
+            )
+            // Instituciones en verde
+            .replace(/— ([A-Za-zÁÉÍÓÚáéíóú .]+)/g,
+                `— <span class="color-edu-inst">$1</span>`
+            );
+
+        // 👉 animación tipo consola (línea por línea)
+        const lines = coloredEducation.split("\n");
+        await typeWriterLines(lines, 60);
+
+        appendOutput("");
         input.value = "";
         return;
     }
