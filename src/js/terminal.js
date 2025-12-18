@@ -115,8 +115,8 @@ Comandos disponibles:
 
 > Otros:
 
-  — Actualización Profesional en Inteligencia Artificial — TECLAB
-  — Inglés A1 — CUI
+  - Actualización Profesional en Inteligencia Artificial — TECLAB
+  - Inglés A1 — CUI
 
 > Formación continua y aprendizaje autodidacta.
 `,
