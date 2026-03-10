@@ -92,13 +92,13 @@ Comandos disponibles:
 > Educación formal:
 
   - Tecnicatura Superior en Programación — TECLAB (en curso)
-  - Tecnicatura Universitaria en Programación — UNQUI (en curso)
+  - Tecnicatura Universitaria en Programación — UNQ (en curso)
 
 > Diplomaturas & Carreras:
 
   - Diplomatura en Desarrollo Backend con Django & Python — UTN
   - Diplomatura en Python — UTN
-  - Diplomatura en Desarrollo y Programación de Videojuegos — UNQUI
+  - Diplomatura en Desarrollo y Programación de Videojuegos — UNQ
   - Carrera de Desarrollo Full Stack (Node.js · Express · MongoDB · REACT) — Coderhouse
   - Carrera de Desarrollo Backend (Node.js · Express · MongoDB) — Coderhouse
 
@@ -112,6 +112,7 @@ Comandos disponibles:
   - Java (Nivel Inicial e Intermedio) — UTN
   - Python & Django — Coderhouse
   - Introducción a Inteligencia Artificial — TECLAB
+  - Curso de GODOT ENGINE  2D | estructura y mecánicas de juego — UDEMY
 
 > Otros:
 
